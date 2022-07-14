@@ -10,8 +10,8 @@
 body {
   font-family: var(--content-font);
   background: var(--background);
-  display: grid;
-  place-items: center;
+  box-sizing: border-box;
+  padding: 3ch;
 }
 
 .parent {
@@ -42,7 +42,7 @@ body {
 
 :where(h3) {
   font-size: var(--font-size-6);
-  text-decoration: overline;
+  border-block-start: 2px solid currentColor;
   color: var(--pink-5);
 }
 
