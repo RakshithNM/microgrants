@@ -1,5 +1,9 @@
 :root {
-  --background: var(--gray-7);
+  --hue: 60;
+  --saturation: 80%;
+  --lightness: 70%;
+
+  --background: #0C5A99;
   --content-font: 'Abel', sans-serif;
 }
 
@@ -8,6 +12,7 @@ body {
   background: var(--background);
   display: grid;
   place-items: center;
+  padding: 3ch;
 }
 
 .parent {
@@ -38,10 +43,14 @@ body {
 
 :where(h3) {
   font-size: var(--font-size-6);
+  text-decoration: overline;
+  color: var(--pink-5);
 }
 
 :where(h4) {
   font-size: var(--font-size-5);
+  color: var(--lime-5);
+  border-block-start: 1px solid currentColor;
 }
 
 :where(p, ul) {
@@ -51,6 +60,10 @@ body {
 :where(p, h1, h3, h4) {
   max-inline-size: 100%;
   text-align: center;
+}
+
+[data-type="name"] > span {
+  color: hsl(var(--hue) var(--saturation) var(--lightness));
 }
 
 small {
