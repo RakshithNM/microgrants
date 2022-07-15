@@ -68,3 +68,9 @@ body {
 small {
   margin-block-end: var(--size-4);
 }
+
+@media(prefers-color-scheme: light) {
+  :where(p, ul) {
+    color: var(--gray-0);
+  }
+}
