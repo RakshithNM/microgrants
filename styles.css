@@ -65,6 +65,14 @@ body {
   text-align: center;
 }
 
+:where(a) {
+  color: var(--yellow-6);
+}
+
+:where(a):visited {
+  color: var(--green-7);
+}
+
 [data-type="name"] > span {
   color: hsl(var(--hue) var(--saturation) var(--lightness));
 }
