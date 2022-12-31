@@ -32,6 +32,10 @@ body {
   justify-content: center;
 }
 
+section[id="previous-year"] > button {
+  margin-block-start: 20%;
+}
+
 .by-nuiteq {
   font-size: var(--font-size-3);
 }
@@ -85,4 +89,23 @@ small {
   :where(p, ul) {
     color: var(--gray-0);
   }
+}
+
+.know-more {
+  font-size: var(--font-size-3);
+}
+
+button[name="close"] {
+  padding: 6px;
+  border-radius: 4px;
+  margin-block-end: 8px;
+}
+
+button[name="previous-year"] {
+  padding: 16px;
+  border-radius: 4px;
+  background: var(--gray-3);
+  color: var(--gray-9);
+  font-size: var(--font-size-5);
+  outline: 2px dashed lime;
 }

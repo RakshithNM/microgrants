@@ -44,6 +44,20 @@ const countUp = () => {
   }
 };
 
+/* Show dialog */
+const dialogOpener2022 = document.getElementById('dialogOpener2022');
+const dialog2022 = document.getElementById('dialog2022');
+const dialogClose2022 = document.getElementById('dialogClose2022');
+
+dialogOpener2022.addEventListener('click', () => {
+  dialog2022.showModal();
+});
+
+dialogClose2022.addEventListener('click', () => {
+  console.log("click buttton");
+  dialog2022.close();
+});
+
 const funds = document.getElementById('remaining-funds');
 const observerOptions = {
   root: document.querySelector('body'),
@@ -55,4 +69,3 @@ const observerCallback = () => {
 }
 let observer = new IntersectionObserver(observerCallback, observerOptions);
 observer.observe(funds);
-
