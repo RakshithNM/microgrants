@@ -86,8 +86,9 @@ small {
 }
 
 @media(prefers-color-scheme: light) {
-  :where(p, ul) {
-    color: var(--gray-0);
+  :where(dialog) {
+    background-color: var(--gray-0);
+    color: var(--gray-9)
   }
 }
 
