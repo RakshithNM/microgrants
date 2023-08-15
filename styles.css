@@ -86,13 +86,17 @@ small {
 }
 
 @media(prefers-color-scheme: light) {
+  :where(h4, h3, h2, h1, p, li) {
+    color: var(--gray-3);
+  }
+
   :where(dialog) {
     background-color: var(--gray-0);
     color: var(--gray-9)
   }
 
-  h4, h3, h2, h1, p, li {
-    color: var(--gray-3);
+  :where(dialog h4, dialog h3, dialog h2, dialog h1, dialog p, dialog li) {
+    color: var(--gray-9);
   }
 }
 
