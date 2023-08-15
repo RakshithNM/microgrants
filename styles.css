@@ -90,6 +90,10 @@ small {
     background-color: var(--gray-0);
     color: var(--gray-9)
   }
+
+  h4, h3, h2, h1, p, li {
+    color: var(--gray-3);
+  }
 }
 
 .know-more {
