@@ -46,16 +46,26 @@ const countUp = () => {
 
 /* Show dialog */
 const dialogOpener2022 = document.getElementById('dialogOpener2022');
+const dialogOpener2023 = document.getElementById('dialogOpener2023');
 const dialog2022 = document.getElementById('dialog2022');
+const dialog2023 = document.getElementById('dialog2023');
 const dialogClose2022 = document.getElementById('dialogClose2022');
+const dialogClose2023 = document.getElementById('dialogClose2023');
 
 dialogOpener2022.addEventListener('click', () => {
   dialog2022.showModal();
 });
 
 dialogClose2022.addEventListener('click', () => {
-  console.log("click buttton");
   dialog2022.close();
+});
+
+dialogOpener2023.addEventListener('click', () => {
+  dialog2023.showModal();
+});
+
+dialogClose2023.addEventListener('click', () => {
+  dialog2023.close();
 });
 
 const funds = document.getElementById('remaining-funds');
