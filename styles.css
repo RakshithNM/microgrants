@@ -32,7 +32,10 @@ body {
   justify-content: center;
 }
 
-section[id="previous-year"] > button {
+section[id="previous-year"] > div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   margin-block-start: 20%;
 }
 
@@ -42,6 +45,7 @@ section[id="previous-year"] > button {
 
 :where(h1, h4) {
   margin-block: var(--size-4);
+  text-shadow: 1px 1px 1px var(--gray-11);
 }
 
 :where(p, li) {
@@ -52,6 +56,7 @@ section[id="previous-year"] > button {
   font-size: var(--font-size-6);
   border-block-start: 2px solid currentColor;
   color: var(--pink-5);
+  text-shadow: 1px 1px 1px var(--gray-11);
 }
 
 :where(h4) {
@@ -113,8 +118,8 @@ button[name="close"] {
 button[name="previous-year"] {
   padding: 16px;
   border-radius: 4px;
-  background: var(--gray-3);
+  background-image: var(--gradient-19);
   color: var(--gray-9);
   font-size: var(--font-size-5);
-  outline: 2px dashed lime;
+  box-shadow: var(--shadow-5);
 }
