@@ -32,9 +32,16 @@ body {
   justify-content: center;
 }
 
+a {
+  text-decoration: wavy;
+  text-decoration-line: underline;
+}
+
 section[id="previous-year"] > div {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-block-start: 20%;
 }
@@ -122,4 +129,25 @@ button[name="previous-year"] {
   color: var(--gray-9);
   font-size: var(--font-size-5);
   box-shadow: var(--shadow-5);
+}
+
+.wave {
+  width: calc(100% + 6ch);
+  box-shadow: var(--shadow-1);
+  margin-left: -3ch;
+  height: 70px;
+}
+
+.wave-bottom {
+  margin-bottom: -3ch;
+  mask: var(--mask-edge-drip-top);
+  -webkit-mask: var(--mask-edge-drip-top);
+  background-image: var(--gradient-18);
+}
+
+.wave-top {
+  margin-top: -3ch;
+  mask: var(--mask-edge-drip-bottom);
+  -webkit-mask: var(--mask-edge-drip-bottom);
+  background: var(--blue-11);
 }
